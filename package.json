@@ -1,0 +1,19 @@
+{
+  "name": "UmbralSend-Server",
+  "version": "1.0.0",
+  "description": "NodeSend Project",
+  "main": "index.js",
+  "repository": "https://github.com/luisangelq/UmbralSend-Server.git",
+  "author": "Luis Angel Quiñones",
+  "license": "ISC",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
