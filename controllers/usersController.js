@@ -2,12 +2,12 @@ const Users = require("../models/Users");
 const bcrypt = require("bcrypt");
 const { validationResult } = require("express-validator");
 
-exports.newUser = async (req, res) => { 
-    //Show express-validator errors
-    const errors = validationResult(req);
-    if(!errors.isEmpty()) {
-        return res.status(400).json({ errors: errors.array()});
-    }
+exports.newUser = async (req, res) => {
+  //Show express-validator errors
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
+  }
 
   //Check if the user was already registered
   const { email, password } = req.body;
